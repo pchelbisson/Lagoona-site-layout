@@ -413,6 +413,10 @@ body {
 }
 
 /* placement */
+.placement {
+  margin-bottom: 70px;
+}
+
 .placement-title {
   margin-bottom: 30px;
 }
@@ -509,4 +513,39 @@ body {
   font-size: 20px;
   line-height: 40px;
   color: #fff;
+}
+
+/* wants-tour */
+.wants-tour {
+  min-height: 274px;
+  margin-bottom: 70px;
+}
+
+.wants-tour div {
+  /* background-color: #e9e9e9; */
+  border-radius: 15px;
+  /* padding-bottom: 71px; */
+}
+
+.wants-tour-title {
+  margin: 0;
+  padding-left: 40px;
+  padding-bottom: 19px;
+  padding-top: 38px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+}
+
+.form {
+  min-height: 106px;
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-bottom: 71px;
+  padding-left: 28px;
+  padding-right: 28px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
 }
