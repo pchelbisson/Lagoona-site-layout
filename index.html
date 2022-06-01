@@ -579,36 +579,44 @@
 
     <section class="wants-tour">
       <div class="container">
-        <h2 class="wants-tour-title">Хочу тур</h2>
-        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form flex">
-          <div class="input-wrapper">
-            <label for="city" class="form-label">Город вылета</label>
-            <select name="city" class="form-select">
-              <option value="Санкт-Петербург" selected>
-                Санкт-Петербург
-              </option>
-            </select>
+        <div class="section-wrapper flex">
+          <h2 class="wants-tour-title">Хочу тур</h2>
+          <div class="form-wrapper flex">
+
+            <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form flex">
+              <div class="input-wrapper flex">
+                <label for="city" class="form-label">Город вылета</label>
+                <select name="city" class="form-select">
+                  <option value="Санкт-Петербург" selected>
+                    Санкт-Петербург
+                  </option>
+                </select>
+              </div>
+              <div class="input-wrapper flex">
+                <label for="country" class="form-label">Страна</label>
+                <select name="country" class="form-select">
+                  <option value="Австралия" selected>Австралия</option>
+                </select>
+              </div>
+              <div class="input-wrapper flex">
+                <label for="date" class="form-label">Дата прибытия</label>
+                <input type="date" name="date" value="2021-10-18" />
+              </div>
+              <div class="input-wrapper flex">
+                <label for="night" class="form-label">Ночей</label>
+                <input class="input-number" name="night" type="number" value="6" />
+              </div>
+              <div class="input-wrapper flex">
+                <label for="tourist" class="form-label">Туристы</label>
+                <input class="input-number" name="tourist" type="number" value="2" required />
+              </div>
+              <div class="input-wrapper flex">
+                <button class="btn btn-form">Найти</button>
+              </div>
+
+            </form>
           </div>
-          <div class="input-wrapper">
-            <label for="country" class="form-label">Страна</label>
-            <select name="country" class="form-select">
-              <option value="Австралия" selected>Австралия</option>
-            </select>
-          </div>
-          <div class="input-wrapper">
-            <label for="date" class="form-label">Дата прибытия</label>
-            <input type="date" name="date" value="2021-10-18" />
-          </div>
-          <div class="input-wrapper">
-            <label for="night" class="form-label">Ночей</label>
-            <input class="input-number" name="night" type="number" value="6" />
-          </div>
-          <div class="input-wrapper">
-            <label for="tourist" class="form-label">Туристы</label>
-            <input class="input-number" name="tourist" type="number" value="2" required />
-          </div>
-          <button class="btn">Найти</button>
-        </form>
+        </div>
       </div>
     </section>
   </main>
