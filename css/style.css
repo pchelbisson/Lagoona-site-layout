@@ -170,9 +170,6 @@ body {
   flex-direction: column;
 }
 
-.special-list-item {
-}
-
 .special-preview {
   overflow: hidden;
   border-radius: 15px;
@@ -541,14 +538,16 @@ body {
 }
 
 .form-wrapper {
+  flex-wrap: nowrap;
   background: #ffffff;
   border-radius: 15px;
   justify-content: space-evenly;
 }
 
 .form {
+  max-width: 1080px;
+  min-height: 106px;
   padding: 30px;
-  flex-wrap: nowrap;
 }
 
 .input-wrapper {
@@ -564,6 +563,10 @@ body {
 
 .input-wrapper select {
   border: 0;
+  width: 170px;
+  appearance: none;
+  overflow: hidden;
+  background: url("../img/rect3.svg") no-repeat right;
 }
 
 .input-wrapper label {
@@ -581,6 +584,103 @@ body {
   color: #000;
 }
 
+.input-wrapper input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.input-wrapper input[type="number"] {
+  width: 127px;
+  border-bottom: 1px solid #cccccc;
+}
+
 .btn-form {
   margin-right: 0;
+}
+
+/* contacts */
+.contacts {
+  margin-bottom: 90px;
+}
+
+.contacts-wrapper {
+  padding: 46px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.contacts-right {
+  flex-direction: column;
+  flex-basis: 33%;
+}
+
+.contacts-item {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.contacts-item:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+.contacts-item-right {
+  flex-basis: 35%;
+}
+
+.contacts-item-left {
+  flex-basis: 65%;
+  flex-direction: column;
+}
+
+.contacts-item-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+}
+
+.contacts-item-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+}
+
+.contacts-item-links {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #cc9933;
+}
+
+.contacts-item-span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #999999;
+}
+
+.contacts-left {
+  flex-basis: 62.5%;
+  min-height: 100%;
+  margin-left: auto;
+  background-image: url(../img/Layer\ 2\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.contacts-btn {
+  padding: 28px;
+  margin-top: 45px;
+  margin-right: 45px;
+  border: 1px solid #cc9933;
+  border-radius: 10px;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #cc9933;
 }
