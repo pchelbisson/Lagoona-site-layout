@@ -581,9 +581,8 @@
       <div class="container">
         <div class="section-wrapper flex">
           <h2 class="wants-tour-title">Хочу тур</h2>
-          <div class="form-wrapper flex">
-
-            <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form flex">
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form flex">
+            <div class="form-wrapper flex">
               <div class="input-wrapper flex">
                 <label for="city" class="form-label">Город вылета</label>
                 <select name="city" class="form-select">
@@ -613,8 +612,9 @@
               <div class="input-wrapper flex">
                 <button class="btn btn-form">Найти</button>
               </div>
-            </form>
-          </div>
+            </div>
+
+          </form>
         </div>
       </div>
     </section>
@@ -622,66 +622,135 @@
     <section class="contacts">
       <div class="container">
         <h2 class="cotacts-title section-title">Контакты</h2>
-        <div class="contacts-wrapper flex">
-          <div class="contacts-right flex">
-            <div class="contacts-item flex">
-              <div class="contacts-item-right flex">
-                <h6 class="contacts-item-title">Адрес</h6>
+        <address class="contacts-address">
+          <div class="contacts-wrapper flex">
+            <div class="contacts-right flex">
+              <div class="contacts-item flex">
+                <div class="contacts-item-right flex">
+                  <h6 class="contacts-item-title">Адрес</h6>
+                </div>
+                <div class="contacts-item-left flex">
+                  <p class="contacts-item-text">
+                    Москва, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+                  </p>
+                </div>
               </div>
-              <div class="contacts-item-left flex">
-                <p class="contacts-item-text">
-                  Москва, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
-                </p>
+              <div class="contacts-item flex">
+                <div class="contacts-item-right flex">
+                  <h6 class="contacts-item-title">Телефон</h6>
+                </div>
+                <div class="contacts-item-left flex">
+                  <a href="tel:+74995356434" class="contacts-item-links">
+                    +7 (499) 535-64-34
+                  </a>
+                  <a href="tel:+74950050544" class="contacts-item-links">
+                    +7 (495) 005-05-44
+                  </a>
+                </div>
               </div>
+              <div class="contacts-item flex">
+                <div class="contacts-item-right flex">
+                  <h6 class="contacts-item-title">E-mail</h6>
+                </div>
+                <div class="contacts-item-left flex">
+                  <a href="mailto:lg.oona@mail.ru" class="contacts-item-links">
+                    lg.oona@mail.ru
+                  </a>
+                  <span class="contacts-item-span">
+                    по вопросам бронирования
+                  </span>
+                  <a href="mailto:hotels.ln@mail.ru" class="contacts-item-links">
+                    hotels.ln@mail.ru
+                  </a>
+                  <span class="contacts-item-span">
+                    по вопросам сотрудничества
+                  </span>
+                </div>
+              </div>
+              <div class="contacts-item flex">
+                <div class="contacts-item-right flex">
+                  <h6 class="contacts-item-title">График</h6>
+                </div>
+                <div class="contacts-item-left flex">
+                  <p class="contacts-item-text">
+                    Понедельник&nbsp;&mdash; пятница, с&nbsp;10:00 до&nbsp;19:00
+                  </p>
+                </div>
+              </div>
+              <button class="contacts-btn">Построить маршрут</button>
             </div>
-            <div class="contacts-item flex">
-              <div class="contacts-item-right flex">
-                <h6 class="contacts-item-title">Телефон</h6>
-              </div>
-              <div class="contacts-item-left flex">
-                <a href="tel:+74995356434" class="contacts-item-links">
-                  +7 (499) 535-64-34
-                </a>
-                <a href="tel:+74950050544" class="contacts-item-links">
-                  +7 (495) 005-05-44
-                </a>
-              </div>
-            </div>
-            <div class="contacts-item flex">
-              <div class="contacts-item-right flex">
-                <h6 class="contacts-item-title">E-mail</h6>
-              </div>
-              <div class="contacts-item-left flex">
-                <a href="mailto:lg.oona@mail.ru" class="contacts-item-links">
-                  lg.oona@mail.ru
-                </a>
-                <span class="contacts-item-span">
-                  по вопросам бронирования
-                </span>
-                <a href="mailto:hotels.ln@mail.ru" class="contacts-item-links">
-                  hotels.ln@mail.ru
-                </a>
-                <span class="contacts-item-span">
-                  по вопросам сотрудничества
-                </span>
-              </div>
-            </div>
-            <div class="contacts-item flex">
-              <div class="contacts-item-right flex">
-                <h6 class="contacts-item-title">График</h6>
-              </div>
-              <div class="contacts-item-left flex">
-                <p class="contacts-item-text">
-                  Понедельник&nbsp;&mdash; пятница, с&nbsp;10:00 до&nbsp;19:00
-                </p>
-              </div>
-            </div>
-            <button class="contacts-btn">Построить маршрут</button>
+            <div class="contacts-left"></div>
           </div>
-          <div class="contacts-left"></div>
-        </div>
+        </address>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper flex">
+          <div class="footer-info flex">
+            <p class="footer-text">
+              &copy;&nbsp;2012-2020 Управляющая компания Объединенной сети &laquo;Лагуна Хотелс&raquo;
+              <br>
+              <br>
+              Представленная на&nbsp;сайте информация носит справочный характер и&nbsp;не&nbsp;является публичной
+              офертой
+            </p>
+            <a href="" class="footer-info-link">
+              Пользовательское соглашение
+            </a>
+          </div>
+          <address class="footer-address">
+            <ul class="footer-address-list list-reset flex">
+              <li class="footer-address-list-item">
+                <p class="footer-address-text">
+                  11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+                </p>
+              </li>
+              <li class="footer-address-list-item">
+                <a href="tel:+74995356434" class="footer-info-link">
+                  +7 (499) 535-64-34
+                </a>
+              </li>
+              <li class="footer-address-list-item">
+                <a href="tel:+74950050544" class="footer-info-link">
+                  +7 (495) 005-05-44
+                </a>
+              </li>
+              <br>
+              <li class="footer-address-list-item">
+                <a href="mailto:lg.oona@mail.ru" class="footer-info-link">
+                  lg.oona@mail.ru
+                </a>
+              </li>
+              <li class="footer-address-list-item">
+                <a href="mailto:hotels.ln@mail.ru" class="footer-info-link">
+                  hotels.ln@mail.ru
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="footer-social list-reset ">
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link link-trip"></a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link link-twitter"></a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link link-facebook"></a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link link-vk"></a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#" class="footer-social-link link-instagram"></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
   </main>
 </body>
 
