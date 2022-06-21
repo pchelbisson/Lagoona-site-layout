@@ -1,3 +1,11 @@
+:root {
+  --btn-focus-hover: #cc9933;
+  --btn-active: #a47312;
+  --link: #cc9933;
+  --link-hover: #f0bf5f;
+  --white: #fff;
+}
+
 @font-face {
   font-family: "Muller";
   src: local("Muller-Bold"), url("../fonts/MullerBold.woff2") format("woff2"),
@@ -38,6 +46,7 @@ html {
 }
 
 a {
+  cursor: pointer;
   color: inherit;
   text-decoration: none;
 }
@@ -99,6 +108,71 @@ body {
   font-size: 16px;
   line-height: 16px;
   color: #cc9933;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:focus {
+  background-color: var(--btn-focus-hover);
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--btn-focus-hover);
+  color: var(--white);
+}
+
+.btn:active {
+  background-color: var(--btn-active);
+  color: var(--white);
+}
+
+.contact-links {
+  position: relative;
+  color: var(--link);
+  transition: color 0.3s ease;
+}
+
+.contact-links svg path {
+  fill: var(--link);
+  transition: fill 0.3s ease;
+}
+
+.contact-links:hover path {
+  fill: var(--link-hover);
+}
+
+.contact-links:active path {
+  fill: var(--btn-active);
+}
+
+.contact-links::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border: 1px solid #cc9933;
+  outline: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.contact-links:focus::after {
+  opacity: 1;
+}
+
+.contact-links:hover {
+  color: var(--link-hover);
+}
+
+.contact-links:active {
+  color: var(--btn-active);
+}
+
+.contact-links:active::after {
+  opacity: 0;
 }
 
 /* header */
@@ -113,12 +187,47 @@ body {
 }
 
 .header-left-link {
+  position: relative;
   margin-left: 34px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   color: #666666;
+  transition: color 0.3s ease;
+}
+
+.header-left-link::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border: 1px solid #cc9933;
+  outline: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.header-left-link:focus::after {
+  opacity: 1;
+}
+
+.header-left-link:focus {
+  color: var(--btn-focus-hover);
+}
+
+.header-left-link:hover {
+  color: var(--btn-focus-hover);
+}
+
+.header-left-link:active::after {
+  opacity: 0;
+}
+
+.header-left-link:active {
+  color: var(--btn-active);
 }
 
 .header-right-link {
@@ -126,7 +235,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #cc9933;
 }
 
 .header-nav {
@@ -141,10 +249,45 @@ body {
 }
 
 .header-nav-links {
+  position: relative;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: #666666;
+  transition: color 0.3s ease;
+}
+
+.header-nav-links::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border: 1px solid #cc9933;
+  outline: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.header-nav-links:focus:after {
+  opacity: 1;
+}
+
+.header-nav-links:focus {
+  color: var(--btn-focus-hover);
+}
+
+.header-nav-links:hover {
+  color: var(--btn-focus-hover);
+}
+
+.header-nav-links:active {
+  color: var(--btn-active);
+}
+
+.header-nav-links:active::after {
+  opacity: 0;
 }
 
 .header-list-item:not(:last-child) {
@@ -737,7 +880,6 @@ input[type="number"]::-webkit-outer-spin-button {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #cc9933;
 }
 
 .footer-address {

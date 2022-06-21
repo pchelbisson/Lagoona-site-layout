@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./img/favicon.png" type="image/png">
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <title>Lagoona - сеть отелей</title>
@@ -24,11 +25,12 @@
             </a>
           </strong>
         </address>
-        <a href="#" class="links header-right-link">
-          <svg width="21" height="12" viewbox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a href="#" class="links contact-links  header-right-link">
+          <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10.59 1.41L14.17 5H0V7H14.17L10.58 10.59L12 12L18 6L12 0L10.59 1.41ZM19 0V12H21V0H19Z"
               fill="#CC9933" />
           </svg>
+
           Личный кабинет
         </a>
       </div>
@@ -49,10 +51,10 @@
               <a href="#placement" class="header-nav-links"> Размещение </a>
             </li>
             <li class="header-list-item">
-              <a href="#" class="header-nav-links"> Блог </a>
+              <a href="#wants-tour" class="header-nav-links"> Блог </a>
             </li>
             <li class="header-list-item">
-              <a href="#" class="header-nav-links"> Контакты </a>
+              <a href="#contacts" class="header-nav-links"> Контакты </a>
             </li>
           </ul>
         </nav>
@@ -577,7 +579,7 @@
       </div>
     </section>
 
-    <section class="wants-tour">
+    <section id="wants-tour" class="wants-tour">
       <div class="container">
         <div class="section-wrapper flex">
           <h2 class="wants-tour-title">Хочу тур</h2>
@@ -585,7 +587,7 @@
             <div class="form-wrapper flex">
               <div class="input-wrapper flex">
                 <label for="city" class="form-label">Город вылета</label>
-                <select name="city" class="form-select">
+                <select id="city" name="city" class="form-select">
                   <option value="Санкт-Петербург" selected>
                     Санкт-Петербург
                   </option>
@@ -593,21 +595,21 @@
               </div>
               <div class="input-wrapper flex">
                 <label for="country" class="form-label">Страна</label>
-                <select name="country" class="form-select">
+                <select id="country" name="country" class="form-select">
                   <option value="Австралия" selected>Австралия</option>
                 </select>
               </div>
               <div class="input-wrapper flex">
                 <label for="date" class="form-label">Дата прибытия</label>
-                <input type="date" name="date" value="2021-10-18" />
+                <input id="date" type="date" name="date" value="2021-10-18" />
               </div>
               <div class="input-wrapper flex">
                 <label for="night" class="form-label">Ночей</label>
-                <input class="input-number" name="night" type="number" value="6" />
+                <input id="night" class="input-number" name="night" type="number" value="6" />
               </div>
               <div class="input-wrapper flex">
                 <label for="tourist" class="form-label">Туристы</label>
-                <input class="input-number" name="tourist" type="number" value="2" required />
+                <input id="tourist" class="input-number" name="tourist" type="number" placeholder="2" required />
               </div>
               <div class="input-wrapper flex">
                 <button class="btn btn-form">Найти</button>
@@ -619,7 +621,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section id="contacts" class="contacts">
       <div class="container">
         <h2 class="cotacts-title section-title">Контакты</h2>
         <address class="contacts-address">
@@ -640,10 +642,10 @@
                   <h6 class="contacts-item-title">Телефон</h6>
                 </div>
                 <div class="contacts-item-left flex">
-                  <a href="tel:+74995356434" class="contacts-item-links">
+                  <a href="tel:+74995356434" class="contact-links contacts-item-links">
                     +7 (499) 535-64-34
                   </a>
-                  <a href="tel:+74950050544" class="contacts-item-links">
+                  <a href="tel:+74950050544" class="contact-links contacts-item-links">
                     +7 (495) 005-05-44
                   </a>
                 </div>
@@ -653,13 +655,13 @@
                   <h6 class="contacts-item-title">E-mail</h6>
                 </div>
                 <div class="contacts-item-left flex">
-                  <a href="mailto:lg.oona@mail.ru" class="contacts-item-links">
+                  <a href="mailto:lg.oona@mail.ru" class="contact-links contacts-item-links">
                     lg.oona@mail.ru
                   </a>
                   <span class="contacts-item-span">
                     по вопросам бронирования
                   </span>
-                  <a href="mailto:hotels.ln@mail.ru" class="contacts-item-links">
+                  <a href="mailto:hotels.ln@mail.ru" class="contact-links contacts-item-links">
                     hotels.ln@mail.ru
                   </a>
                   <span class="contacts-item-span">
@@ -685,73 +687,73 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-wrapper flex">
-          <div class="footer-info flex">
-            <p class="footer-text">
-              &copy;&nbsp;2012-2020 Управляющая компания Объединенной сети &laquo;Лагуна Хотелс&raquo;
-              <br>
-              <br>
-              Представленная на&nbsp;сайте информация носит справочный характер и&nbsp;не&nbsp;является публичной
-              офертой
-            </p>
-            <a href="" class="footer-info-link">
-              Пользовательское соглашение
-            </a>
-          </div>
-          <address class="footer-address">
-            <ul class="footer-address-list list-reset flex">
-              <li class="footer-address-list-item">
-                <p class="footer-address-text">
-                  11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
-                </p>
-              </li>
-              <li class="footer-address-list-item">
-                <a href="tel:+74995356434" class="footer-info-link">
-                  +7 (499) 535-64-34
-                </a>
-              </li>
-              <li class="footer-address-list-item">
-                <a href="tel:+74950050544" class="footer-info-link">
-                  +7 (495) 005-05-44
-                </a>
-              </li>
-              <br>
-              <li class="footer-address-list-item">
-                <a href="mailto:lg.oona@mail.ru" class="footer-info-link">
-                  lg.oona@mail.ru
-                </a>
-              </li>
-              <li class="footer-address-list-item">
-                <a href="mailto:hotels.ln@mail.ru" class="footer-info-link">
-                  hotels.ln@mail.ru
-                </a>
-              </li>
-            </ul>
-          </address>
-          <ul class="footer-social list-reset ">
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link link-trip"></a>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper flex">
+        <div class="footer-info flex">
+          <p class="footer-text">
+            &copy;&nbsp;2012-2020 Управляющая компания Объединенной сети &laquo;Лагуна Хотелс&raquo;
+            <br>
+            <br>
+            Представленная на&nbsp;сайте информация носит справочный характер и&nbsp;не&nbsp;является публичной
+            офертой
+          </p>
+          <a href="" class="contact-links footer-info-link">
+            Пользовательское соглашение
+          </a>
+        </div>
+        <address class="footer-address">
+          <ul class="footer-address-list list-reset flex">
+            <li class="footer-address-list-item">
+              <p class="footer-address-text">
+                11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+              </p>
             </li>
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link link-twitter"></a>
+            <li class="footer-address-list-item">
+              <a href="tel:+74995356434" class="contact-links footer-info-link">
+                +7 (499) 535-64-34
+              </a>
             </li>
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link link-facebook"></a>
+            <li class="footer-address-list-item">
+              <a href="tel:+74950050544" class="contact-links footer-info-link">
+                +7 (495) 005-05-44
+              </a>
             </li>
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link link-vk"></a>
+            <br>
+            <li class="footer-address-list-item">
+              <a href="mailto:lg.oona@mail.ru" class="contact-links footer-info-link">
+                lg.oona@mail.ru
+              </a>
             </li>
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link link-instagram"></a>
+            <li class="footer-address-list-item">
+              <a href="mailto:hotels.ln@mail.ru" class="contact-links footer-info-link">
+                hotels.ln@mail.ru
+              </a>
             </li>
           </ul>
-        </div>
-
+        </address>
+        <ul class="footer-social list-reset ">
+          <li class="footer-social-item">
+            <a href="#" class="footer-social-link link-trip"></a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#" class="footer-social-link link-twitter"></a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#" class="footer-social-link link-facebook"></a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#" class="footer-social-link link-vk"></a>
+          </li>
+          <li class="footer-social-item">
+            <a href="#" class="footer-social-link link-instagram"></a>
+          </li>
+        </ul>
       </div>
-    </footer>
-  </main>
+
+    </div>
+  </footer>
 </body>
 
 </html>
